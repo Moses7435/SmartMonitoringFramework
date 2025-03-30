@@ -13,9 +13,8 @@ This project is a **secure, decentralized smart monitoring system** leveraging *
 
 ## 🏗️ Tech Stack
 - **Blockchain Platform**: Hyperledger Fabric / Ethereum (Customizable)
-- **Backend**: Node.js / Python (Flask, Django)
-- **Frontend**: React.js / Angular (for UI Dashboard)
-- **Database**: IPFS / PostgreSQL / MongoDB
+- **Backend**: Python (Flask, Django)
+- **Database**: SQLite (Loaded directly into WAMP Server)
 - **Smart Contracts**: Solidity / Chaincode
 - **Security**: AES-256 Encryption, Zero-Knowledge Proofs
 
@@ -34,24 +33,20 @@ This project is a **secure, decentralized smart monitoring system** leveraging *
 
 2. **Install Dependencies**
    ```bash
-   npm install  # for frontend
-   pip install -r requirements.txt  # for backend
+   pip install -r requirements.txt  # Install Python dependencies
    ```
 
-3. **Setup Blockchain Network**
-   ```bash
-   ./start-network.sh  # Start Hyperledger Fabric network
-   ```
+3. **Setup Database**
+   - Load the `db.sqlite3` file into **WAMP Server**.
+   - Ensure that WAMP Server is running.
 
 4. **Run the Backend Server**
    ```bash
-   python app.py  # Flask/Django backend
+   python app.py  # Start the Flask/Django application
    ```
 
-5. **Run the Frontend**
-   ```bash
-   npm start  # React/Angular frontend
-   ```
+5. **Access the Web Application**
+   - Open a browser and navigate to `http://localhost:5000` (or your configured port).
 
 ## 📌 API Endpoints
 | Endpoint | Method | Description |
@@ -76,4 +71,3 @@ For any questions, feel free to reach out:
 - 📩 Email: yourname@example.com
 - 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
 - 🌐 Website: [yourwebsite.com](https://yourwebsite.com)
-
